@@ -106,7 +106,7 @@ public class HospitalActivity extends AppCompatActivity {
         patientsReqBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HospitalActivity.this, HospitalPatientsReq.class));
+                HospitalPatientsReq.Launch(HospitalActivity.this,true);
             }
         });
     }

@@ -13,7 +13,7 @@
     <color name="colorPrimary">#D00000</color>
     <color name="colorprimary1">#F5FE8D</color>
     <color name="colorPrimaryDark">#D00000</color>
-    <color name="colorAccent">#FBF7F7</color>
+    <color name="colorAccent">#FF5722</color>
     <color name="headingcolor">#000000</color>
     <color name="colorbackground">#FFFFFF</color>
 </resources>

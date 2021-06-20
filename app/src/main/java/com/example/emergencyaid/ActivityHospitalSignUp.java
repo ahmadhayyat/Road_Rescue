@@ -82,7 +82,7 @@ public class ActivityHospitalSignUp extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (!task.isSuccessful()) {
-                                Toast.makeText(ActivityHospitalSignUp.this, "Hospital Up Error", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ActivityHospitalSignUp.this, "Hospital SignUp Error", Toast.LENGTH_SHORT).show();
 
                             } else {
 

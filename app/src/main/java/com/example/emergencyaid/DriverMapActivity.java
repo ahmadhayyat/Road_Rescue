@@ -1,10 +1,5 @@
 package com.example.emergencyaid;
 
-import androidx.annotation.NonNull;
-import androidx.core.app.ActivityCompat;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.FragmentActivity;
-
 import android.Manifest;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -21,6 +16,11 @@ import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.fragment.app.FragmentActivity;
 
 import com.directions.route.AbstractRouting;
 import com.directions.route.Route;
@@ -72,7 +72,7 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
     private FusedLocationProviderClient mFusedLoactionClient;
 
-    private Button mLogout,mSettings,mrideStatus,mHistory;
+    private Button mLogout, mSettings, mrideStatus, mHistory, patientReq;
 
     private Switch mworkingSwitch;
 
@@ -82,15 +82,15 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
     private boolean isLoggingOut = false;
 
-    private TextView mCustomerName,mCustomerPhone,mCustomerDestination;
-    private String customerId="",destination;
+    private TextView mCustomerName, mCustomerPhone, mCustomerDestination;
+    private String customerId = "", destination;
 
     private LatLng destinationLatLng;
 
     @Override
-    protected void onCreate (Bundle savedInstanceState) {
-        super.onCreate (savedInstanceState);
-        setContentView (R.layout.activity_driver_map);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_driver_map);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
 
         mFusedLoactionClient = LocationServices.getFusedLocationProviderClient(this);
@@ -188,15 +188,19 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                 return;
             }
         });
-
+        patientReq = findViewById(R.id.patientsReqBtn);
+        patientReq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                HospitalPatientsReq.Launch(DriverMapActivity.this, false);
+            }
+        });
         getAssignedCustomer();
-
     }
 
 
     private void endRide()
     {
-
         mrideStatus.setText("Pick Patient");
         erasePolylines();
         String userId=FirebaseAuth.getInstance().getCurrentUser().getUid();
@@ -257,9 +261,6 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
                     getAssignedCustomerInfo();
 
                 }else{
-
-
-
                     endRide();
                 }
 

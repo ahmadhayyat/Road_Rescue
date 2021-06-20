@@ -34,6 +34,20 @@
                     android:background="@drawable/bg_overlay"
                     android:scaleType="fitXY" />
 
+                <TextView
+                    android:id="@+id/statusTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="20dp"
+                    android:background="#FF9800"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="Pending"
+                    android:visibility="gone"
+                    android:textColor="@android:color/black" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -41,6 +55,7 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:id="@+id/llDriver"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
@@ -52,6 +67,7 @@
                             android:text="From(Driver):" />
 
                         <TextView
+                            android:id="@+id/driverName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="10dp"
@@ -60,24 +76,76 @@
                     </LinearLayout>
 
                     <LinearLayout
+                        android:id="@+id/llHospitalName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hospital:" />
+
+                        <TextView
+                            android:id="@+id/hospitalName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="XYZ HOSPITAL" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHospitalAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Address:" />
+
+                        <TextView
+                            android:id="@+id/hospitalAddress"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:text="Muree Road" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHospitalBtn"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal">
 
                         <Button
+                            android:id="@+id/declinedBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="@android:color/holo_red_dark"
-                            android:text="Declined" />
+                            android:text="Reject" />
 
                         <Button
+                            android:id="@+id/acceptBtn"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="@android:color/holo_green_dark"
                             android:text="Accept" />
                     </LinearLayout>
+
+                    <Button
+                        android:id="@+id/patientReqBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FF9800"
+                        android:text="Request For Patient Admission" />
                 </LinearLayout>
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
