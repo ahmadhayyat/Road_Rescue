@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".SignsofHeartAttackActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtsignsofheartattack1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Sometimes heart attacks are sudden and there is no doubt
+what is happening, but those are the minority. Most heart attacks
+begin slowly with very mild discomfort and pain. The biggest mistake
+is when people aren’t sure and they wait too long to seek help.
+If you or anyone you know has the following symptoms, seek help immediately:
+
+\n\n• Chest discomfort such as uncomfortable pressure, squeezing, fullness, or pain in the center of the chest lasting more than a few minutes, or that comes and goes
+\n• Discomfort in other areas of the upper body including pain or discomfort in one or both arms, the back, neck, jaw, or stomach
+\n• Shortness of breath
+\n• A cold sweat, nausea, or lightheadedness
+
+\n\n Women are more likely to have some of the other common symptoms, in
+particular back or jaw pain, shortness of breath, nausea, and
+vomiting. Even if you are not sure, it’s wise to call emergency
+number. If you are not able to access Emergency Medical Services
+(EMS), have someone else drive you to the hospital immediately.
+Never drive yourself unless there is no other option."/>
+
+            <TextView
+                android:id="@+id/txtsignsofheartattack2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsignsofheartattack1"
+                android:text="Question?"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+            <TextView
+                android:id="@+id/txtsignsofheartattack3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsignsofheartattack2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:text="\nAre the symptoms of a heart attack the same for both men and women?
+
+\n\n Women have the same symptoms as men but, are more prone to also have
+back or jaw pain, shortness of breath, nausea, and vomiting. You
+need to seek immediate medical help for any symptoms, not just the
+“classic” symptoms of a heart attack."/>
+            <TextView
+                android:id="@+id/txtsignsofheartattack4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsignsofheartattack3"
+                android:text="What Is Happening?"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+            <TextView
+                android:id="@+id/txtsignsofheartattack5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtsignsofheartattack4"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:text="\nThee heart functions both mechanically and
+electrically. It pumps blood by contracting, which you are able to
+feel as a pulse—the mechanical function. The heart also has cells
+that regulate the mechanical system by transmitting electrical
+signals through conduction pathways, stimulating the muscle tissue
+to contract—the electrical function. The rate of electrical
+stimulation or pulses normally correlates with the rate of heart
+-muscle contractions or beats, and should be between sixty and
+eighty times per minute at rest, increasing with exertion.
+
+\n\nThe pumping chambers of the heart are the ventricles. If they suddenly
+stop effectively contracting and pumping blood into the body, Sudden
+Cardiac Arrest (SCA) occurs. The heart then has a disorganized and
+abnormal rhythm and spasmodic twitching called “ventricular
+fibrillation” (VF) that is ineffective in pumping blood to the body.
+The person in VF or V fib usually has no pulse because the heart is
+not pumping blood, and they will then become unresponsive, stop
+breathing, and die within minutes without intervention.\n\n"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

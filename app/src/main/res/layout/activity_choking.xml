@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".ChokingActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtchoking1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Choking occurs when an object\ngets stuck in the throat and partly or completely blocks the airway.Signs of choking include:\n\n• Pointing to throat, hands crossed on throat (universal sign of choking)
+ \n• Gasping or coughing\n• Signs of panic
+ • Difficulty speaking\n• Red face that steadily turns blue\n• Loss of consciousness\n"/>
+
+            <TextView
+                android:id="@+id/txtchoking2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtchoking1"
+                android:text="Alert!"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+            <TextView
+                android:id="@+id/txtchoking3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtchoking2"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="17sp"
+                android:text="Never slap any person on the back you think might be choking.
+ A baby who is crying, has a strong cough, and appears to be breathing well should be
+ placed in a sitting position and allowed to finish coughing. Never stick your fingers down a baby’s throat,
+ or anyone else’s, in an attempt to remove an object while they are coughing.\n\nWhen you suspect someone is choking, ask her,
+ “Are you choking?” If the person is able to answer you,
+ don’t do anything because it’s likely that she will free the food or object on her own.
+ In the case of actual choking, the person will not be able to talk and you need to help them.
+ Call emergency number if the person can’t talk, make noise, or breathe well or is unconscious,
+ then perform the Heimlich maneuver as outlined below. If the person is unconscious, lay her on her back.
+ Check the person’s mouth for any visible obstruction and try to dislodge it using a finger sweep.
+ If you are unable to do so, begin mouth-to-mouth resuscitation and CPR.
+ Continue to check inside the person’s mouth for any signs of the foreign body as the chest compressions of CPR may dislodge it.\n\n"/>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

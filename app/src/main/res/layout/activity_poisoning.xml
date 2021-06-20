@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".PoisoningActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtpoisoning1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid for Poisoning"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtpoisoning2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpoisoning1"
+                android:textColor="@android:color/black"
+                android:text="\nTake the following steps if you suspect poisoning:
+
+\n\n1. Check for ABCs, call emergency number, begin rescue breathing and
+CPR if necessary, and then call the Poison Control Center at 1-800
+-222-1222 for advice.
+
+\n\n2. Try to identify the poison and do not make the person throw up
+unless you are advised to do so by the Poison Control Center (note
+that parents should not use syrup of ipecac at home anymore).
+
+\n\n3. If the person vomits on their own, take measures to clear their
+airway, but wrap a cloth around your fingers before sweeping out
+the mouth and throat.
+
+\n\n4. Remove the person’s clothes if any poison has spilled on them and
+flush the skin with water."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

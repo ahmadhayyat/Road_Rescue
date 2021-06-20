@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".FirstStepsofaFirstResponderActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtresponder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="The first step to take at
+an accident of any kind is to stop, take a few deep breaths, and
+perform a complete 360- degree sweep of the accident scene and your
+surroundings. Remember, your safety is key, so be sure to assess any
+safety issues before you proceed. Keep yourself safe by following these steps:
+
+\n\n1. Park your vehicle in a safe spot that’s out of the way of any other moving vehicles, being careful not to block traffic.
+\n\n2. Check for any visible fuel or potentially combustible liquid on the ground, and make sure to park a safe distance away if you find any.
+\n\n3. Look for any downed power lines to avoid, put on your emergency brake and your hazard lights, and call emergency number.
+\n\n4. Check for traffic and exit your vehicle.
+\n\nDo not run across any busy traffic lanes; you will not be able to help if you also become injured.\n"/>
+
+            <TextView
+                android:id="@+id/txtresponder2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtresponder1"
+                android:text="Approaching the Accident and Taking Charge"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txtresponder3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtresponder2"
+                android:textColor="@android:color/black"
+                android:text="\nYour next steps should be:
+\n\n1. Bring the first-aid kit from your vehicle and quickly but
+ carefully approach the scene while scanning and assessing
+\n\n2. Shout, “I’m here to help, is anyone hurt?”
+\n\n3. Ask the first person you see how many passengers he thinks are involved.
+\n\n4. If everyone visible appears unconscious or unresponsive, do a fast
+visual scan of the surrounding area for additional people that may
+have been ejected as you move around vehicles.
+\n\n5. If there are other adults with you or nearby, take charge and ask
+for help as you need it in the most assertive way you can, without raising panic in others.
+\n\nIt’s vital that professional rescuers and medical teams be on the way,
+so if you have not been able to call emergency number, ask someone
+else to call or go for help. Use common sense if you need to leave
+the scene to summon help yourself. Note if there are unmoving
+persons in the vehicles. If a small fire or heavy smoke is coming
+from the front of a car, threatening any passengers inside, then
+remove the persons from danger (without endangering yourself)
+before going for help. Above all else, summoning help and enlisting
+help in all your actions is a top priority.n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

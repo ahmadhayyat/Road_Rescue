@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".DonotPanicActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtpanic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Being prepared is the best way to
+avoid panic. Being ready for anything will help you to stay calm,
+sum up the situation quickly, and proceed with more efficient,
+capable action. Being prepared will ensure you are composed and self
+-assured, which will help calm the injured party.
+\n\nIn order to be prepared, make sure to post emergency telephone numbers
+near the phones in your home and office. Important numbers to keep
+in addition to 911(U.S.A) are the fire department, the nearest
+hospital, the Poison Control Center (1-800-222-1222(U.S.A)), and
+your family doctor. Encourage family members with serious medical
+conditions to wear a Medic Alert tag or bracelet, and keep a list of
+your family members’ medical conditions along with your emergency
+numbers. Also, have an escape plan from your home and practice it
+with your children. Keep a fire extinguisher on hand and show all
+your family members how to use it.\n"/>
+
+            <TextView
+                android:id="@+id/txtpanic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpanic1"
+                android:text="Fact"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txtpanic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtpanic2"
+                android:textColor="@android:color/black"
+                android:text="You can obtain Medic Alert
+identification at your pharmacy or doctor’s office. These jewelry
+identification tags are usually engraved with your primary medical
+conditions (e.g., allergies), ID number, and twenty-four-hour
+emergency-response-center number.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

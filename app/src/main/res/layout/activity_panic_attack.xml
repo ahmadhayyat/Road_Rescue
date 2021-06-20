@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".PanicAttackActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtpanicattack1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="Panic attacks can happen anywhere,
+anytime—while alone, in the company of others, in public, at home,
+and even waking you from sleep. If you have experienced a panic
+attack, you are aware that they are similar to an episode of extreme
+fear, along with the following symptoms:
+
+\n\n• Rapid heart rate
+\n• Sweating
+\n• Trembling
+\n• Shortness of breath and hyperventilation
+\n• Chills or hot flashes
+\n• Nausea
+\n• Abdominal cramping
+\n• Chest pain
+\n• Headache
+\n• Dizziness
+\n• Faintness
+\n• A feeling of tightness in your throat
+\n• Difficulty swallowing
+\n• A sense of impending death
+
+\n\nOftentimes, people experiencing a panic attack think that they are
+having a heart attack and seek emergency care.
+
+\n\nTypically, a panic attack starts suddenly, peaks within ten minutes,
+and lasts approximately one-half hour, but some last longer, have
+varying patterns, and in rare cases may last up to twenty-four
+hours. Panic attacks may cause you to feel fatigued and worn.
+Anyone with frequent panic attacks has a condition called panic
+disorder. Panic attacks are potentially disabling, but very
+treatable using medications, therapy, and relaxation techniques to
+control or prevent the attacks. More women than men are affected by panic attacks.\n\n"/>
+    </ScrollView>
+
+</RelativeLayout>

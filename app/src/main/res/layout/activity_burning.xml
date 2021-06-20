@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".BurningActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtburning1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid for Burning"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtburning2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtburning1"
+                android:textColor="@android:color/black"
+                android:text="\n1.Finger cots- these are great for keeping the dirt and grime out of wounds. Use them in conjunction with a dressing.
+\n2.Alcohol wipes- use these to remove grease from around a wound before applying Benzoin. You can also use them to sanitize things.
+\n3.Tincture of Benzoin- this comes in individually wrapped packages. They are swabs that you wipe on the skin around a wound (after cleaning said wound) to help the bandages stick.
+\n4.Steri-strips- these are better than butterfly bandages for keeping wounds closed; use in conjunction with the Benzoin mentioned above.
+\n4.Magnifying glass- to look for slivers and little tiny things.
+\n5.Afrin- for nose bleeds"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

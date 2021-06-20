@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".KeepaUsefulKitintheVehicleActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtkit1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="In order to be prepared for any event, from
+splinters to major accidents, when on the road it’s important to
+keep a comprehensive first-aid kit in your vehicle. The best way to
+decide what you might need to include involves taking a few minutes
+to try and imagine various conditions and scenarios you might
+experience where you regularly travel. Are there mountains and
+cliffs? Are there bodies of water next to the roads? Are the roads
+lighted at night? Do you travel or live in a remote location with
+unreliable cellphone coverage? What is the weather like throughout
+the year? In addition to the items listed in First Aid Basics menu
+for your in-home first-aid kit, and depending on where you typically
+drive and the condition of the vehicle you drive, the following
+items may be useful additions to your vehicle first-aid kit:
+
+\n\n• Large, wide-lens flashlight
+\n• Penlight
+\n• Several triangle reflectors
+\n• Reflective vest(s)
+\n• Small, multipurpose fire extinguisher
+\n• Road flares
+\n• Prepaid and fully charged cell phone
+\n• Durable, multipurpose gloves
+\n• Several yards of coiled rope
+\n• Duct tape
+\n• Bungee cords
+\n• Space blankets
+\n• All-purpose scissors
+\n• Note pad, pencil, and
+\n• fluorescent marker
+\n• Adjustable wrench
+\n• A few small sand bags
+\n• Extra batteries
+\n• Automated External Defibrillator (AED)
+\n• Hand sanitizer
+\n• Flares
+\n• CB radio
+\n• Extra water bottles
+\n• Walkie-talkies
+\n• A disposable camera\n\n"/>
+    </ScrollView>
+
+</RelativeLayout>

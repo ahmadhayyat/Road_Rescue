@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".HeartAttackActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtheartattack1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sings and Symptoms"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtheartattack2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtheartattack1"
+                android:textColor="@android:color/black"
+                android:text="\nSometimes heart attacks are sudden and there is no doubt
+what is happening, but those are the minority. Most heart attacks
+begin slowly with very mild discomfort and pain. The biggest mistake
+is when people aren’t sure and they wait too long to seek help.
+If you or anyone you know has the following symptoms, seek help immediately:
+
+\n\n• Chest discomfort such as uncomfortable pressure, squeezing, fullness, or pain in the center of the chest lasting more than a few minutes, or that comes and goes
+\n• Discomfort in other areas of the upper body including pain or discomfort in one or both arms, the back, neck, jaw, or stomach
+\n• Shortness of breath
+\n• A cold sweat, nausea, or lightheadedness"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

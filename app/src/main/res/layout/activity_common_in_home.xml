@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".CommonInHomeActivity">
+    <TextView
+        android:id="@+id/txtcuts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuts (Lacerations)"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txtwounds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Puncture Wounds"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/txtcuts"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/txtdental"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tooth Loss,Dental Pain,and Dental Injuries"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_below="@id/txtwounds"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/txtdiabetic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diabetic Emergencies"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/txtdental"/>
+
+    <TextView
+        android:id="@+id/txtear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Earache and Ear Injury"
+        android:layout_below="@id/txtdiabetic"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/txtallergic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtear"
+        android:text="Allergic Reactions"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="25dp"/>
+
+
+</RelativeLayout>

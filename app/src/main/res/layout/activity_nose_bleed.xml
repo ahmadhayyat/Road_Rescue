@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".NoseBleedActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtnose1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Nosebleeds are often dramatic and
+frightening, but usually not serious, and are dealt with easily.
+The two types of nosebleeds are classified by whether the bleeding
+is coming from the front of the nose (anterior), accounting for 90
+percent of all nosebleeds, or the back of the nose (posterior).
+Anterior nosebleeds are easily controlled at home or by a doctor.
+Posterior nosebleeds tend to occur more often in elderly people and
+are more complicated, often requiring hospital admission and
+management by an ear, nose, and throat specialist. The majority of
+people will experience a nosebleed at some time in their life, but
+they are most common in children age two to ten and adults age
+fifty to eighty. Nosebleeds tend to occur in the morning hours in
+dry, cold climates and during the winter.
+\n\nMost nosebleeds are due to some identifiable factor such as allergies,
+blunt trauma to the nose, trauma inside the nose from such things
+as nose picking or irritation from a cold or cocaine use, and dry
+nasal passages from cold, dry air. If you have an underlying
+condition such as an inability of the blood to clot; are taking
+blood-thinning medications or aspirin; have liver disease, abnormal
+blood vessels or cancers in the nose, you may also experience
+nosebleeds. High blood pressure can also contribute to a nosebleed,
+but won’t likely be the only cause.
+\n\nMost of the time, you will only have bleeding from one nostril, but
+with any heavy bleeding, the blood can overflow from one nostril
+into the area inside the nose where the two nostrils converge and
+spill into the other nostril, causing bleeding from both sides.
+Blood can also drip into the back of the throat and be swallowed,
+causing you to have blood in the mouth or to even vomit blood.\n"/>
+
+            <TextView
+                android:id="@+id/txtnose2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnose1"
+                android:text="First Aid For Nose Bleed"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txtnose3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnose2"
+                android:textColor="@android:color/black"
+                android:text="\nIf you experience a nosebleed, follow the steps below:
+\n\n1. Remain calm and sit up straight, leaning your head forward—don’t
+tilt your head back because blood will run down your throat,
+causing you to gag and swallow the blood.
+\n\n2. Using your thumb and forefinger, pinch your nostrils together ten
+full minutes, and repeat if the bleeding doesn’t stop after the first ten minutes.
+\n\n3. Don’t swallow any blood; spit it out so that you don’t vomit.
+\n\nAfter the bleeding has stopped, try to prevent any further irritation
+such as sneezing or nose blowing for the next twenty-four hours.
+
+\n\nDon’t use ice packs, because they do not help. If you have dry air in your home,
+like most people do in the winter, add moisture to the air with a
+humidifier or vaporizer or nasal gel and saline nasal spray to help
+keep the nose from drying out. See your doctor:
+
+\n• For any repeated episodes of nosebleeds
+\n• If you have any other bleeding, such as in the urine or stool, along with nosebleeds
+\n• If you are bruising easily
+\n• If you are on any blood-thinning medications
+\n• If you have any underlying disease that may affect your blood-clotting ability, such as liver or kidney disease or hemophilia
+\n• If you are on or have recently had chemotherapy \n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

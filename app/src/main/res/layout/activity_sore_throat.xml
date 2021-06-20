@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".SoreThroatActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtthroat1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Sore throats are usually caused by viruses that cause
+colds or other upper respiratory illnesses, or bacteria, as in strep
+throat. Sore throats may also be caused by chemicals in such things
+as cigarette smoke, a scrape from something going down your throat
+the wrong way, allergies, postnasal drip, and sometimes cancer.
+Symptoms of sore throat are usually also felt throughout the body
+because they are present with either a viral or bacterial infection,
+and include fever, headache, nausea, and malaise. Signs of sore
+throat include pus on the surface of the tonsils, redness of the
+back of the throat, tender neck glands (inflamed lymph nodes),
+drooling and spitting due to painful swallowing, difficulty
+breathing, and little red blisters in the oral cavity.\n"/>
+
+            <TextView
+                android:id="@+id/txtthroat2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtthroat1"
+                android:text="First Aid for Sore Throat"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txtthroat3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtthroat2"
+                android:textColor="@android:color/black"
+                android:text="\nThe top priority for treating a sore throat is to
+                relieve pain. This can be done in the following ways:
+\n\n1. Gargle with warm salt water.
+\n\n2. Take nonsteroidal anti-inflammatory drugs such as ibuprofen, aspirin (only in persons over age sixteen), and naproxen.
+\n\n3. Stay hydrated by drinking enough fluids—fevers often increase fluid requirements, while painful swallowing may decrease fluid intake.
+\n\nTaking pain relievers may help you increase fluid intake. Stay away
+from caffeine because it’s very dehydrating. During cold and flu
+season, avoiding close contact with ill people can help keep you
+from getting a sore throat and other viral infections.
+\n\nIf you have signs of a bacterial infection, such as a severe sore throat with little
+coughing; a fever over 101°F along with headache, abdominal pain, or vomiting; signs of
+dehydration including dry mouth, sunken eyes, severe weakness, or decreased urine output;
+or if a family member has recently had strep throat, see a doctor immediately. If you are
+in such pain that you can’t get to sleep with OTC medication, you should see the doctor.
+Go to the emergency department if swallowing causes such pain that drooling occurs,
+you are having extreme difficulty breathing, or you have signs of significant dehydration.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

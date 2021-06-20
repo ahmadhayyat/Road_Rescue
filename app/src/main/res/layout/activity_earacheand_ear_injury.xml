@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".EaracheandEarInjuryActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtear1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:text="The most common causes of earaches are an
+infection of the middle ear (otitis media) and an inflammation of
+the outer ear canal (otitis externa), also called swimmer’s ear.
+Causes include a minor injury to the ear canal, fluid trapped in the
+inner ear, or bacteria that leads to discomfort, swelling, and pain.
+Earaches are not contagious, and usually result from a complication
+to a cold and are sometimes associated with bottle feeding, pacifier
+use, secondhand smoke, and allergies.
+
+\n\nSymptoms of an earache include severe stabbing pain, hearing loss,
+itching, fever, nausea or vomiting, swelling of the ear, ringing or
+buzzing sounds, and fluids draining from the ear."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+            <TextView
+                android:id="@+id/txtear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtear1"
+                android:text="First Aid for Earache"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtear2"
+                android:textColor="@android:color/black"
+                android:text="\nIn the case of a high fever or discharge from the ear canal, get
+immediate medical attention, as antibiotics are necessary if the
+cause of the earache is an infection. Take the following steps:
+
+\n\n• Children should always be seen by a doctor.
+\n• Take the entire course of any prescribed antibiotics.
+\n• Use OTC painkillers such as ibuprofen, acetaminophen, and aspirin
+(adults only), eardrops, and hot packs to help alleviate pain.
+\n• To help prevent ear infections, wash hands often.
+\n• Use a bulb syringe to suction mucus gently out of the nose of infants
+and toddlers and keep baby’s head tilted up during feeding.
+\n• Elevate the head of a child’s bed a few inches (place item under the
+mattress, not on top where it could lead to suffocation) to help
+drain the fluid that collects behind the eardrums and use a
+humidifier in your child’s room at night.
+
+\n\nNever place cotton-tipped swabs, matches, hairpins, or anything else in
+the ear. This can push wax further into the ear canal or perforate
+the eardrum, resulting in severe ear damage."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtear3"
+                android:text="Treat an Ear Injury"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtear5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtear4"
+                android:textColor="@android:color/black"
+                android:text="\nEar injuries are typically accompanied by pain, dizziness,
+hearing loss, and bleeding from inside the ear canal.
+Take the following steps to treat an ear injury:
+
+\n\n1. Cover the outside of the ear loosely with a bandage or dressing to
+soak up blood and drainage, but do not attempt to plug the ear or
+try to stop any flow.
+\n2. Place the person on the injured side with the injured ear facing
+down to drain the blood, and call emergency number or go to an
+emergency department immediately.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

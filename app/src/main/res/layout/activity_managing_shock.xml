@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".ManagingShockActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtmanagingshock1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="Preventing and managing shock is a matter of
+life and death in emergencies. When the circulatory system stops
+working to deliver blood to the body, shock occurs. If the heart
+beats irregularly, if blood vessels become too dilated, or if a
+person is losing too much blood, shock may occur. The symptoms of
+shock are a weak and rapid pulse; disorientation; dizziness or
+confusion; cold, clammy skin and hands and pale skin; extreme thirst;
+nausea and vomiting; high level of anxiety; and fingernails that
+do not blanch with applied pressure (turn white when pressed and
+color does not return within two seconds).
+
+\n\nIn emergency situations you must guard the person against shock. Call emergency
+number for help immediately, because you cannot manage shock alone
+for long, and the person is likely to go into cardiac arrest. Check
+the ABCs continually while waiting for help and begin CPR if needed.
+If the head, neck, back, hips, or legs are not injured, lay the
+person on the ground facing up and elevate the legs to keep critical
+blood flow to vital organs. Use a towel, a sanitary napkin, or a
+piece of clothing to apply pressure to open wounds to slow bleeding.
+Keep the person calm, comfortable, and warm, but never give the
+person water, even if they claim to be very thirsty. Monitor the
+person for consciousness and ABCs continually until help arrives.\n\n"/>
+    </ScrollView>
+
+
+</RelativeLayout>

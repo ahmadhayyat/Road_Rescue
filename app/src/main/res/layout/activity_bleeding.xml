@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".BleedingActivity">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtbleeding1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid for Bleeding"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtbleeding2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtbleeding1"
+                android:textColor="@android:color/black"
+                android:text="\nEven though blood loss may not be severe, some people do not handle the sight of blood
+well, and this can cause them to behave irrationally, faint, or even go into shock.
+
+\n\n1. Try to keep the person as calm as possible, even if it calls for
+mundane conversation.
+
+\n\n2. Remember to monitor the person’s ABCs and have him lie down and
+manage for shock if necessary (see Chapter 2).
+
+\n\n3. Apply direct pressure to most bleeding wounds, except those that are
+caused by an object such as glass or those that have protruding
+bone. For those types of wounds, press down firmly on either side
+of the object, keeping the injured body part above the level of the heart."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

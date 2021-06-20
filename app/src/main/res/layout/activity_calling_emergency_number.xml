@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".CallingEmergencyNumberActivity">
+    <TextView
+        android:id="@+id/txtemergencynmb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:textSize="17sp"
+        android:text="You may be afraid, embarrassed, or wary of calling
+emergency number (example: 1122) if you are not sure whether the
+medical condition or complaint is really an emergency.
+\n\nThere are many conditions that require immediate attention, and you
+should not wait before calling emergency number. Instead of
+risking serious consequences or death if you are not sure, it’s wise to call
+for help."/>
+
+</RelativeLayout>

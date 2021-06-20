@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".DiabeticEmergenciesActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtdiabetic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:text="When a person has diabetes, her body doesn’t produce and properly use
+insulin, the hormone required by the body to convert sugar, starches,
+and other food into energy. Prolonged blood-sugar extremes in
+diabetics can cause loss of consciousness known as a diabetic coma."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+            <TextView
+                android:id="@+id/txtdiabetic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdiabetic1"
+                android:text="What To Watch For"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtdiabetic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdiabetic2"
+                android:textColor="@android:color/black"
+                android:text="\nSymptoms of high blood sugar or low blood sugar often
+appear gradually and some or all of the following symptoms can
+signal the onset of a diabetic coma:
+
+\n• Fruity-smelling breath
+\n• Frequent urination
+\n• Fast heart rate
+\n• Deep and rapid breathing
+\n• Extreme thirst
+\n• Dry mouth
+\n• Warm, dry, red skin
+\n• Drowsiness
+\n• Nausea with upper abdominal pain
+\n• Vomiting
+\n• Loss of consciousness
+\n• Agitation, behavior changes, irritability"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+            <TextView
+                android:id="@+id/txtdiabetic4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdiabetic3"
+                android:text="What to Do"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtdiabetic15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdiabetic4"
+                android:textColor="@android:color/black"
+                android:text="\nthe case of hypoglycemia or hyperglycemia, take the following steps:
+
+\n1. If you know the person is diabetic, or if you find a Medic Alert
+ bracelet stating the person is diabetic, ask if she has taken her
+ required insulin. If she has not or you are unsure, call emergency number for help.
+
+\n2. In the case of low blood sugar, or hypoglycemia, give her some form
+of sugar such as fruit juice. Don’t give hard candy to someone who
+is very ill or in an altered state because of the risk of choking.
+
+\nMany people are aware of how to treat their diabetes and how to test
+their blood-glucose levels. If tested blood remains below 60 mg/dL
+or if the person continues to have symptoms of severe hypoglycemia,
+hyperglycemia, or insulin reaction, call emergency number and get to an emergency department.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

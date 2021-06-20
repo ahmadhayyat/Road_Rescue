@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <color name="gradStart">#FFFFFF</color>
+    <color name="gradStop">#FFFFFF</color>
+
+
+    //First Aid Basics
+
+    <color name="colorPrimary">#D00000</color>
+    <color name="colorprimary1">#F5FE8D</color>
+    <color name="colorPrimaryDark">#D00000</color>
+    <color name="colorAccent">#FBF7F7</color>
+    <color name="headingcolor">#000000</color>
+    <color name="colorbackground">#FFFFFF</color>
+</resources>

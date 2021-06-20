@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".UniversalPrecautionsActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtuniversal1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="The threat of communicable disease is a hazard
+in performing first aid. You should follow some standard precautions
+(called universal precautions) and use personal protection equipment
+like gloves, a CPR barrier, or eye protection. Universal precautions
+protect aid providers from exposure to HIV (the virus that causes
+AIDS), hepatitis B, and other blood-borne germs when exposed to
+blood, certain body fluids (including semen and vaginal fluid), and
+tissue from anyone who is infectious. Universal precautions should
+also be taken for cerebro spinal (from the lining of the brain and
+spinal cord), synovial (joint), pleural (lung), peritoneal
+(abdominal), pericardial (heart), and amniotic (pregnant uterus)
+fluids. These guidelines don’t apply to other body fluids like
+saliva, urine, sweat, tears, nasal secretions, sputum, and feces
+unless they contain blood. Professional universal precautions
+include:
+\n\n1. Wash your hands before and after any medical intervention.
+\n2. Wear gloves whenever you are in contact with another’s blood, body secretions, or tissues even if the person you are helping is a family member.
+\n3. Wear a face mask or body gown whenever there is a possibility of blood splashing onto the rescuer.
+\n4. Dispose of contaminated sharp objects in the appropriate puncture-proof container.
+\n5. Dispose of all contaminated equipment in an appropriate biohazard container.\n\n"/>
+    </ScrollView>
+
+
+</RelativeLayout>

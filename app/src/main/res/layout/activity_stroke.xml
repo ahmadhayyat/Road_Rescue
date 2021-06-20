@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".StrokeActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtstroke1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First Aid for Stroke"
+                android:layout_marginTop="20dp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtstroke2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtstroke1"
+                android:textColor="@android:color/black"
+                android:text="\nFor any symptoms call emergency number immediately, as prompt medical
+attention can prevent a fatal or disabling stroke from occurring.
+Then do the following:
+
+\n\n1. Check for ABCs and start CPR if necessary.
+\n2. Place unconscious person in the recovery position as outlined in Emergency Response menu.
+\n3. Lay the person down gently, supporting his head and
+ shoulders with a pillow or folded garment.
+\n4. Don’t give him anything to eat or drink.
+\n5. Reassure the person that help is on the way."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

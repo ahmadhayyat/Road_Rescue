@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".FeverActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtfever1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Fevers are one way your body defends itself against
+many bacteria and viruses that like to live in the body’s normal
+temperature of 98.6°F. Increasing the temperature is one way the
+body works to make it harder for those sorts of invaders to survive,
+while activating your body’s immune system. A low fever is 98.8°F to
+100.8°F, mild to moderate fever is 101°F to 103°F, and a high fever
+is 104°F and above. Causes of fever include hot weather,
+immunizations, bacterial and viral infections, too much time in the
+sun, and allergies. Symptoms that accompany a fever often include a
+hot, flushed face, sweating, loss of appetite, nausea and vomiting,
+feeling hot, body aches, constipation, or diarrhea. High fevers are
+sometimes associated with delirium and seizures.
+\n"/>
+
+            <TextView
+                android:id="@+id/txtfever2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfever1"
+                android:text="First Aid for Fever"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txtfever3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtfever2"
+                android:textColor="@android:color/black"
+                android:text="\nTake the following steps for fever:
+\n\n1. Use a thermometer to monitor the temperature.
+\n\n2. Remove blankets and excess clothing.
+\n\n3. Keep the room cool.
+\n\n4. Give sponge baths in lukewarm water.
+\n\n5. Hydrate with plenty of fluids (watch for light-colored urine often, indicating a person is well hydrated).
+\n\n6. Use acetaminophen to lower temperature as directed on the package.
+\n\nDon’t:
+\n• Give aspirin to anyone with fever
+\n• Use rubbing alcohol in a bath or rubbed on the skin
+
+\n\nSee your medical-care provider for any irregular breathing or shortness
+of breathe, stiff neck, confusion, rashes, persistent sore throat,
+vomiting and diarrhea, painful urination, or seizures. Fevers below
+102°F in adults don’t need treatment with any medications unless
+advised by your doctor. For fevers of 102°F or higher, take OTC
+medications such as acetaminophen or ibuprofen, and aspirin for
+ages sixteen and over only.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

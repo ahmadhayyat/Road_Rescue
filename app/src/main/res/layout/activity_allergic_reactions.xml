@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".AllergicReactionsActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtallergic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@android:color/black"
+                android:text="An allergic reaction is an acquired, abnormal
+inflammatory reaction to a substance (allergen) that is usually
+mild to moderate in most people. Pollens, medications, certain
+foods, insect stings and bites, dust mites, pet dander, perfumes,
+and detergents may cause an allergic reaction. Allergies are common
+in all age groups and reactions to allergens range in severity from
+mild to severe to a life- threatening allergic reaction called
+anaphylaxis. Even though a person may previously have experienced
+no reactions or only very mild reactions to an allergen for many
+years, in some cases repeated exposures (sensitization) may
+eventually lead to a more severe reaction without warning. As you
+become more sensitized to an allergen, even a mild exposure may at
+some point trigger a potentially life-threatening reaction."
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+
+            <TextView
+                android:id="@+id/txtallergic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtallergic1"
+                android:text="Signs and Symptoms"
+
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor"/>
+
+            <TextView
+                android:id="@+id/txtallergic3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtallergic2"
+                android:textColor="@android:color/black"
+                android:text="\nMost allergic reactions are mild, and although they are normally not
+serious or life threatening, it’s a good idea to advise your doctor of the
+condition if it is new or unique to your medical history. The
+following are common symptoms of mild allergic reactions:
+
+\n• Itchy skin
+\n• Itchy, watery eyes
+\n• Itchy, runny nose with
+\n• clear nasal discharge
+\n• Sneezing
+\n• Rashes and hives
+\n• Minor swelling\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

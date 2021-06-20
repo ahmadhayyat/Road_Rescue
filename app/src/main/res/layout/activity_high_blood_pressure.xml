@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".HighBloodPressureActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txthighbloodpresure1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="20sp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:textSize="17sp"
+                android:text="Your blood pressure is related to the amount of blood your heart pumps and the
+degree of resistance to blood flow in your arteries. Even with very
+high, or even dangerously high, blood pressure, you don’t usually
+have symptoms, although some people with very high blood pressure
+may have dull headaches, dizziness, or frequent nosebleeds.
+
+\n\nYour risk of high blood pressure increases as you age, and although
+high blood pressure is more common in men, women often develop high
+blood pressure after menopause. Hypertension is very common among
+African Americans and correlates with serious complications including stroke and heart attack.\n"/>
+
+            <TextView
+                android:id="@+id/txthighbloodpresure2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthighbloodpresure1"
+                android:text="First Aid for Hypertension"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/headingcolor" />
+
+            <TextView
+                android:id="@+id/txthighbloodpresure3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthighbloodpresure2"
+                android:textColor="@android:color/black"
+                android:text="Hypertension runs in families, so it has genetic
+risk factors, but you can control other risk factors by increasing
+your level of physical activity, which helps your heart along with
+your waistline. The management and control of high blood pressure
+includes the following lifestyle modifications and medications:
+
+\n\n• Quit smoking and keep alcohol consumption to no more than two drinks a day.
+\n• Lose weight so that you maintain a healthy weight.
+\n• Exercise regularly.
+\n• Reduce sodium (salt) intake.
+\n• Take medicines as directed.
+
+\n\nThe American Heart Association recommends a minimum of thirty minutes
+of exercise every other day for heart health, and the Surgeon
+General recommends thirty minutes of physical activity daily for
+overall health. Practicing stress-reduction techniques such as deep
+breathing and mediation, along with a healthy lifestyle, helps
+decrease stress and lower blood pressure.\n\n"
+                android:textSize="17sp"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

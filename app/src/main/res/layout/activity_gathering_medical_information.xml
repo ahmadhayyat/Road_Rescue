@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbackground"
+    tools:context=".GatheringMedicalInformationActivity">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtmedicalinfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="Your family medical history is a complete
+record of health information from three generations of relatives
+that helps doctors recognize the many factors that your family has
+in common, including genes, environment, and lifestyle. This medical
+history will give clues to medical conditions that may run in your
+family, along with certain patterns of disorders, to determine your
+risk of developing a particular condition such as heart disease,
+high blood pressure, stroke, certain cancers, and diabetes.
+\n\nCompile an information record for all family members that includes their
+full name, birth date, allergies, history of illnesses, current and
+past medications, immunization records, history of injuries, any
+disabilities, rehabilitations, addiction and substance-abuse history
+and treatment, past hospitalizations, and surgeries. Include any
+contact information that a first responder may need in case of
+disasters and in case of times where there may not be anyone to
+provide the necessary information.
+\n\nMake sure you also record the name and contact information of your doctors, your
+insurance coverage, who to notify in case of emergency,
+and even your religious preference in your medical-information
+record.\n\n"/>
+    </ScrollView>
+
+</RelativeLayout>

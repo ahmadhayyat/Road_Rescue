@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasicCPRandAEDActivity">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txtcpr1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="17sp"
+            android:text="According to the AHA, CPR is not
+a single skill, but a series of assessments and interventions, and
+cardiac arrest is not just one problem, so the steps of CPR will
+vary depending on the type or cause of the arrest. For the purposes
+of this book, only lay-rescuer techniques and methods will be
+reviewed. It’s worthy to note that lay rescuers are no longer taught
+to check for pulse or signs of circulation or taught to provide
+rescue breathing without chest compressions for an unresponsive
+person. Take the following steps when you witness anyone over the
+age of one-year-old collapse:
+
+\n\n1. Assess that it is safe to approach the fallen person.
+\n2. Use protective equipment and follow universal precautions. If you are able to, use common sense, and stay away from any obvious hazards.
+\n3. Attempt to wake the person by rubbing your knuckles firmly against the sternum (breastbone) and shouting, “Are you okay?”
+\n4. If the person fails to rouse, immediately call emergency number or shout for help, depending on your situation. If there is an AED available, also shout for someone to bring it.
+\n5. If the person becomes conscious, is moaning, or moves, do not start CPR.
+\n6. Call emergency number if the person is not able to speak or appears confused. If the person does not wake, begin CPR and use an AED if available.
+
+\n\nAn AED is a small, portable electronic device that is used to deliver
+an electric shock in an attempt to disrupt or stop abnormal
+electrical activity in the heart. Abnormal electrical activity
+correlates with an abnormal heart rhythm, and a continual abnormal
+rhythm is not sufficient to pump blood and deliver oxygen through
+the body. An AED shock cannot restart a dead heart; the heart must
+have a rhythm (even though the rhythm is abnormal). The AED will
+automatically diagnose any cardiac arrhythmia when attached by
+leads to an unconscious person. When you see one of these lethal
+rhythms, you can then treat the person with the AED electrical
+therapy or a shock (defibrillation) that may interrupt the
+arrhythmia and allow the heart to re-establish a normal and
+effective rhythm. You can learn how to use an AED in many first-aid,
+first responder, and CPR classes.\n\n"/>
+    </ScrollView>
+
+</RelativeLayout>
