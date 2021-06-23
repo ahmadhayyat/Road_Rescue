@@ -58,13 +58,12 @@ public class ActivityHospitalSignUp extends AppCompatActivity {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-                if (user != null) {
+                /*if (user != null && user.isEmailVerified()) {
                     Intent intent = new Intent(ActivityHospitalSignUp.this, HospitalActivity.class);
                     startActivity(intent);
-
                     finish();
 
-                }
+                }*/
 
             }
         };
@@ -114,7 +113,6 @@ public class ActivityHospitalSignUp extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(ActivityHospitalSignUp.this, HospitalLoginActivity.class);
                 startActivity(intent);
-                return;
 
             }
         });

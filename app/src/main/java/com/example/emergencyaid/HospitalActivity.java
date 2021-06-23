@@ -1,10 +1,10 @@
 package com.example.emergencyaid;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,7 +26,7 @@ import java.util.regex.Pattern;
 public class HospitalActivity extends AppCompatActivity {
     private EditText mNameField, mPhoneField, mAddressField, mVacantField;
 
-    private Button mBack, mConfirm, patientsReqBtn;
+    private Button mBack, mConfirm, patientsReqBtn, logoutBtn;
 
     private FirebaseAuth mAuth;
     private DatabaseReference mHospitalDatabase;
@@ -56,13 +56,13 @@ public class HospitalActivity extends AppCompatActivity {
     private String mPhone;
     private String mAddress;
     private String mVacant;
-
+    ProgressBar prgBar;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_hospital);
 
-
+        prgBar = findViewById(R.id.prgBar);
         awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
 
         mNameField = (EditText) findViewById(R.id.hospitalName);
@@ -84,7 +84,7 @@ public class HospitalActivity extends AppCompatActivity {
         userID = mAuth.getCurrentUser().getUid();
 
         mHospitalDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child("Hospitals").child(userID);
-
+        prgBar.setVisibility(View.VISIBLE);
         getUserInfo();
 
         mConfirm.setOnClickListener(new View.OnClickListener() {
@@ -106,7 +106,17 @@ public class HospitalActivity extends AppCompatActivity {
         patientsReqBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                HospitalPatientsReq.Launch(HospitalActivity.this,true);
+                HospitalPatientsReq.Launch(HospitalActivity.this, true);
+            }
+        });
+        logoutBtn = findViewById(R.id.logout);
+        logoutBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                prgBar.setVisibility(View.VISIBLE);
+                mAuth.signOut();
+                prgBar.setVisibility(View.GONE);
+                finish();
             }
         });
     }
@@ -115,6 +125,7 @@ public class HospitalActivity extends AppCompatActivity {
         mHospitalDatabase.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                prgBar.setVisibility(View.GONE);
                 if (dataSnapshot.exists() && dataSnapshot.getChildrenCount() > 0) {
                     Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
                     if (map.get("Name") != null) {
