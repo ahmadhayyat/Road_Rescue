@@ -115,6 +115,7 @@ public class HospitalPatientsReq extends AppCompatActivity {
                                     jsonData.put(KEY_NAME, map.get(KEY_NAME).toString());
                                     jsonData.put(KEY_ADDRESS, map.get(KEY_ADDRESS).toString());
                                     jsonData.put(KEY_PHONE, map.get(KEY_PHONE).toString());
+                                    jsonData.put(KEY_VACANT, map.get(KEY_VACANT).toString());
                                     jsonData.put(KEY_HOSPITAL_ID, hospitalId[0]);
                                     hospitalsList.add(jsonData);
                                 } catch (JSONException e) {

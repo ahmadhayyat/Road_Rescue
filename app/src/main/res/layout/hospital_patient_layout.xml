@@ -73,6 +73,7 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginLeft="10dp"
                             android:text="Ahmad" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -94,6 +95,7 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginLeft="10dp"
                             android:text="XYZ HOSPITAL" />
+
                     </LinearLayout>
 
                     <LinearLayout
@@ -115,6 +117,49 @@
                             android:layout_marginStart="10dp"
                             android:layout_marginLeft="10dp"
                             android:text="Muree Road" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llHospitalVacEst"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="Vacant" />
+
+                        <TextView
+                            android:id="@+id/vacant"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="2" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:gravity="end"
+                            android:text="EST" />
+
+                        <TextView
+                            android:id="@+id/est"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_weight="1"
+                            android:text="2 min" />
                     </LinearLayout>
 
                     <LinearLayout

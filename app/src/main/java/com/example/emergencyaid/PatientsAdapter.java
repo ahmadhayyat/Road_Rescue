@@ -30,6 +30,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Random;
 
 import static com.example.emergencyaid.HospitalPatientsReq.KEY_ADDRESS;
 import static com.example.emergencyaid.HospitalPatientsReq.KEY_APPROVED;
@@ -42,12 +43,15 @@ import static com.example.emergencyaid.HospitalPatientsReq.KEY_PENDING;
 import static com.example.emergencyaid.HospitalPatientsReq.KEY_PHONE;
 import static com.example.emergencyaid.HospitalPatientsReq.KEY_REQ_ID;
 import static com.example.emergencyaid.HospitalPatientsReq.KEY_STATUS;
+import static com.example.emergencyaid.HospitalPatientsReq.KEY_VACANT;
 
 public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.ViewHolder> {
     LayoutInflater mInflater;
     Boolean isFromHospital;
     ArrayList<JSONObject> hospitalsList;
     Context context;
+    final int min = 2;
+    final int max = 10;
 
     public PatientsAdapter(Context context, ArrayList<JSONObject> hospitalsList, boolean isFromHospital) {
         this.context = context;
@@ -71,6 +75,7 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.ViewHo
             holder.llHospitalName.setVisibility(View.GONE);
             holder.llHospitalAddress.setVisibility(View.GONE);
             holder.reqBtn.setVisibility(View.GONE);
+            holder.llVacEst.setVisibility(View.GONE);
         } else {
             holder.llDriver.setVisibility(View.GONE);
             holder.llHospitalBtn.setVisibility(View.GONE);
@@ -81,6 +86,9 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.ViewHo
             try {
                 holder.hospitalName.setText(jsonObject.getString(KEY_NAME));
                 holder.address.setText(jsonObject.getString(KEY_ADDRESS));
+                holder.vacantTv.setText(jsonObject.getString(KEY_VACANT));
+                int random = new Random().nextInt((max - min) + 1) + min;
+                holder.estTv.setText(random + " mins");
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -190,9 +198,9 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.ViewHo
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        LinearLayout llDriver, llHospitalName, llHospitalAddress, llHospitalBtn;
+        LinearLayout llDriver, llHospitalName, llHospitalAddress, llHospitalBtn, llVacEst;
         Button declinedBtn, acceptBtn, reqBtn;
-        TextView hospitalName, address, driverName, statusTv;
+        TextView hospitalName, address, driverName, statusTv, vacantTv, estTv;
 
         public ViewHolder(@NonNull @NotNull View itemView) {
             super(itemView);
@@ -207,6 +215,9 @@ public class PatientsAdapter extends RecyclerView.Adapter<PatientsAdapter.ViewHo
             address = itemView.findViewById(R.id.hospitalAddress);
             driverName = itemView.findViewById(R.id.driverName);
             statusTv = itemView.findViewById(R.id.statusTv);
+            llVacEst = itemView.findViewById(R.id.llHospitalVacEst);
+            vacantTv = itemView.findViewById(R.id.vacant);
+            estTv = itemView.findViewById(R.id.est);
         }
     }
 }

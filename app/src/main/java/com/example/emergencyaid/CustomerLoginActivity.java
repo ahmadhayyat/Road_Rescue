@@ -1,8 +1,5 @@
 package com.example.emergencyaid;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -11,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -18,6 +18,8 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import static com.example.emergencyaid.ProfileActivity.PROFILE_PATIENT;
 
 public class CustomerLoginActivity extends AppCompatActivity {
     private EditText mEmail, mPassword;
@@ -56,10 +58,8 @@ public class CustomerLoginActivity extends AppCompatActivity {
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
                 if(user!=null && mAuth.getCurrentUser().isEmailVerified()){
-
-                    Intent intent = new Intent(CustomerLoginActivity.this, PatientMapActivity.class);
+                    ProfileActivity.launch(CustomerLoginActivity.this, PROFILE_PATIENT);
                     Toast.makeText(CustomerLoginActivity.this, "Welcome to Road Rescue", Toast.LENGTH_SHORT).show();
-                    startActivity(intent);
                     finish();
 
                 }
@@ -91,9 +91,9 @@ public class CustomerLoginActivity extends AppCompatActivity {
                             Toast.makeText(CustomerLoginActivity.this, "Incorrect Email-id/Password.", Toast.LENGTH_SHORT).show();
                         }else{
                             if(mAuth.getCurrentUser().isEmailVerified()){
-                                String user_id = mAuth.getCurrentUser().getUid();
+                                /*String user_id = mAuth.getCurrentUser().getUid();
                                 DatabaseReference current_user_db = FirebaseDatabase.getInstance().getReference().child("Users").child("Customers").child(user_id);
-                                current_user_db.setValue(true);
+                                current_user_db.setValue(true);*/
 
                             }else{
                                 Toast.makeText(CustomerLoginActivity.this, "Please, verify your email.", Toast.LENGTH_SHORT).show();
