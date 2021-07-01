@@ -2,10 +2,13 @@ package com.example.emergencyaid;
 
 import android.Manifest;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.location.Criteria;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Looper;
@@ -58,9 +61,9 @@ import java.util.Map;
 
 public class DriverMapActivity extends FragmentActivity implements OnMapReadyCallback, RoutingListener {
 
-
+    LocationManager locationManager;
     private GoogleMap mMap;
-    Location mLastLocation ;
+    Location mLastLocation;
     LocationRequest mLocationRequest;
     SupportMapFragment mapFragment;
     private LatLng myLocation;
@@ -86,13 +89,28 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
     private String customerId = "", destination;
 
     private LatLng destinationLatLng;
+    public Criteria criteria;
+    public String bestProvider;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_map);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
-
+        locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
+        criteria = new Criteria();
+        bestProvider = String.valueOf(locationManager.getBestProvider(criteria, true)).toString();
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            // TODO: Consider calling
+            //    ActivityCompat#requestPermissions
+            // here to request the missing permissions, and then overriding
+            //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+            //                                          int[] grantResults)
+            // to handle the case where the user grants the permission. See the documentation
+            // for ActivityCompat#requestPermissions for more details.
+            return;
+        }
+        mLastLocation = locationManager.getLastKnownLocation(bestProvider);
         mFusedLoactionClient = LocationServices.getFusedLocationProviderClient(this);
 
         polylines = new ArrayList<>();
@@ -101,18 +119,18 @@ public class DriverMapActivity extends FragmentActivity implements OnMapReadyCal
 
         mCustomerInfo = (LinearLayout) findViewById(R.id.customerInfo);
 
-        mCustomerName= (TextView) findViewById(R.id.customerName);
-        mCustomerPhone= (TextView) findViewById(R.id.customerPhone);
-        mCustomerDestination= (TextView) findViewById(R.id.customerDestination);
+        mCustomerName = (TextView) findViewById(R.id.customerName);
+        mCustomerPhone = (TextView) findViewById(R.id.customerPhone);
+        mCustomerDestination = (TextView) findViewById(R.id.customerDestination);
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(DriverMapActivity.this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
-        }else {
+        } else {
             mapFragment.getMapAsync(this);
         }
 
 
-        mSettings= (Button) findViewById(R.id.settings);
+        mSettings = (Button) findViewById(R.id.settings);
         mLogout= (Button) findViewById(R.id.logout);
         mrideStatus= (Button) findViewById(R.id.rideStatus);
         mworkingSwitch = (Switch) findViewById(R.id.workingSwitch);
